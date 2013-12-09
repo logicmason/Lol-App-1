@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="styles/bootstrap.css">
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
+        <script src="http://localhost:35729/livereload.js"></script>
 </head>
   <body ng-app="eartrainingApp">
     <!--[if lt IE 7]>
@@ -26,8 +27,22 @@
       <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
+    <!-- This class, "header" is a header -->
+    <div class="header container">
+      <ul class="nav nav-pills pull-right">
+        <li class="active"><a ng-href="#">Home</a></li>
+        <li><a ng-href="#/about">About</a></li>
+        <li><a ng-href="#/contact">Contact</a></li>
+      </ul>
+      <h3 class="text-muted">eartraining</h3>
+    </div>
+    <!-- This is a dynamic view -->
     <div class="container" ng-view=""></div>
+
+    <!-- This class "footer", is a footer -->
+    <div class="footer container">
+      <p>♥ from the Logic Mason</p>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -71,4 +86,5 @@
         <!-- endbuild -->
         <!-- midi.js package -->
         <script src="midi/build/MIDI.js"></script>
+
 </html>
