@@ -1,0 +1,14 @@
+<p>Play the sounds and then select the interval between them.</p>
+"dynamically" loaded sounds
+<br />
+<audio src="piano/{{ randomNote() }}" controls>HTML5 audio not supported</audio>
+<audio src="piano/{{ randomNote() }}" controls>
+  // from js would be
+  var sound = new Audio('piano/E4.mp3');
+  sound.play();
+</audio>
+<hr/>
+
+<div class="btn-group">
+  <button type="button" name="att" class="btn btn-primary" ng-repeat="option in options">{{ option }}</button>
+</div>

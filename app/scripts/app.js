@@ -15,6 +15,13 @@ angular.module('eartrainingApp', [
       .when('/about', {
         templateUrl: 'views/about.html'
       })
+      .when('/contact', {
+        templateUrl: 'views/contact.html'
+      })
+      .when('/question', {
+        templateUrl: 'views/question.html',
+        controller: 'QuestionsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
